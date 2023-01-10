@@ -7,17 +7,12 @@
     tools:context=".MusicianActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listMusician">
-
-    </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/musicianRV"
+
         />
 
 </LinearLayout>

@@ -1,7 +1,10 @@
 package com.example.finalmobprog;
 
 public class Musician {
-    int id;
-    String name;
-    int age;
+
+    public int id;
+    public String name;
+    public Integer age;
+    public String country;
+    public String description;
 }
