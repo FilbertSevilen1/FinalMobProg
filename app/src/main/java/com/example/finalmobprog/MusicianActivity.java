@@ -14,16 +14,16 @@ public class MusicianActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_musician);
 
-        MusicianDBFunction productDBFunction = new MusicianDBFunction(this);
+        MusicianDBFunction musicianDBFunction = new MusicianDBFunction(this);
 
         Musician musician = new Musician();
         musician.name = "Taylor Swift";
         musician.age = 33;
 
-        productDBFunction.insert(musician);
+        musicianDBFunction.insert(musician);
 
         TextView Musiciantv = findViewById(R.id.listMusician);
-        ArrayList<Musician> listMusician = productDBFunction.getAllProduct();
+        ArrayList<Musician> listMusician = musicianDBFunction.getAllMusician();
         String data ="";
 
         for (int i = 0;i<listMusician.size();i++){

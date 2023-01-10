@@ -14,7 +14,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS msproduct(" +
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS msmusician(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "name TEXT," +
                 "age INTEGER)");
@@ -22,7 +22,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS msproduct");
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS msmusician");
         onCreate(sqLiteDatabase);
     }
 }

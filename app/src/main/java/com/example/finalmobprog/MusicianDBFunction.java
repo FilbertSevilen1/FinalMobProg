@@ -24,7 +24,7 @@ public class MusicianDBFunction {
         db.close();
     }
 
-    public ArrayList<Musician> getAllProduct(){
+    public ArrayList<Musician> getAllMusician(){
         ArrayList<Musician> listMusician = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from msmusician", null);
