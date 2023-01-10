@@ -18,7 +18,7 @@ public class MusicianDBFunction {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("name", musician.name);
-        cv.put("qty", musician.age);
+        cv.put("age", musician.age);
 
         db.insert("msmusician", null, cv);
         db.close();
