@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+
 public class MusicianAdapter extends RecyclerView.Adapter<MusicianAdapter.ViewHolder> {
     Context context;
     ArrayList<Musician> listMusician;
