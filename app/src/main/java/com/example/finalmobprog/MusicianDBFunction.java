@@ -19,6 +19,8 @@ public class MusicianDBFunction {
         ContentValues cv = new ContentValues();
         cv.put("name", musician.name);
         cv.put("age", musician.age);
+        cv.put("country", musician.country);
+        cv.put("description", musician.description);
 
         db.insert("msmusician", null, cv);
         db.close();
@@ -34,6 +36,8 @@ public class MusicianDBFunction {
             musician.id = cursor.getInt(cursor.getColumnIndex("id"));
             musician.name = cursor.getString(cursor.getColumnIndex("name"));
             musician.age = cursor.getInt(cursor.getColumnIndex("age"));
+            musician.country = cursor.getString(cursor.getColumnIndex("country"));
+            musician.description = cursor.getString(cursor.getColumnIndex("description"));
             listMusician.add(musician);
         }
         return listMusician;

@@ -46,22 +46,18 @@
             android:textSize="18dp"
             android:text="Indonesia">
         </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:text=" - ">
-
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/musicianDescription"
-            android:textSize="18dp"
-            android:text="Artis">
-        </TextView>
 
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicianDescription"
+        android:textSize="18dp"
+        android:text="Artis"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+    </TextView>
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"

@@ -17,7 +17,9 @@ public class DBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS msmusician(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "name TEXT," +
-                "age INTEGER)");
+                "age INTEGER," +
+                "country TEXT," +
+                "description TEXT)");
     }
 
     @Override
