@@ -14,8 +14,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void gotoLogin(View view){
-        Intent intent = new Intent(this, login.class);
+    public void gotoMusicians(View view){
+        Intent intent = new Intent(this, MusicianActivity.class);
+        startActivity(intent);
+    }
+    public void gotoMusics(View view){
+        Intent intent = new Intent(this, MusicActivity.class);
         startActivity(intent);
     }
 }
