@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,11 +15,16 @@ import java.util.ArrayList;
 
 public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.ViewHolder> {
     Context context;
-    ArrayList<Music> listMusic;
+    List<Music> listMusic;
 
-    public MusicAdapter(Context context, ArrayList<Music> listMusic) {
+    public MusicAdapter(Context context) {
         this.context = context;
+        this.listMusic = new ArrayList<>();
+    }
+
+    public void setListMusic(List<Music> listMusic) {
         this.listMusic = listMusic;
+        notifyDataSetChanged();
     }
 
     public MusicAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -29,9 +35,9 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MusicAdapter.ViewHolder holder, int position) {
         Music music = listMusic.get(position);
-        holder.musicName.setText(music.name);
-        holder.musicGenre.setText(music.genre);
-        holder.musicReleaseDate.setText(music.release);
+        holder.musicName.setText(music.trackName);
+        holder.musicGenre.setText(music.primaryGenreName);
+        holder.musicReleaseDate.setText(music.releaseDate);
     }
 
     @Override
