@@ -4,10 +4,6 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Music {
-//    public String name;
-//    public String genre;
-//    public String release;
-
 
     @SerializedName("wrapperType")
     @Expose
