@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/music"
+    tools:context=".AboutUsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Bee-Music"
+        android:textColor="@color/white"
+        android:layout_marginTop="110dp"
+        android:textSize="64dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:justificationMode="inter_word"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:text="Bee-Music is founded by 3 college students and have transformed music listening forever when it launched in 2023. Discover, manage and share over 30 million tracks, including 4.7 thousand podcasts. Today, Bee-Music is the world’s most popular audio streaming subscription service with 321m users, including 285m subscribers, across over 172 markets."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:padding="15dp"
+        android:lines="4"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="Made by:\n
+        2440004016 - Bryan Miraclo\n
+2440005095 - Clement Wim Tanudjaja\n
+2440009206 - Ignatius Filbert Sevilen"/>
+
+
+</LinearLayout>
