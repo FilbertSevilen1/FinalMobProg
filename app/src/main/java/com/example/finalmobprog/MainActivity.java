@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MusicActivity.class);
         startActivity(intent);
     }
+
+    public void gotoAbtUs(View view){
+        Intent intent = new Intent(this, AboutUsActivity.class);
+        startActivity(intent);
+    }
 }
